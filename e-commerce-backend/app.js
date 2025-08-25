@@ -1,0 +1,29 @@
+const express=require("express");
+const mongoose= require("mongoose");
+const app=express();
+const categoryRoutes=require("./routes/category.route")
+
+app.use(express.json());
+
+app.get('/',(request,response)=>{
+    response.send("Server Running Successfully");
+})
+
+app.use("/category",categoryRoutes);
+
+async function connectDB(){
+    await mongoose.connect("mongodb://localhost:27017/",{
+        dbName:"e-commerce-store-db"
+    })
+    console.log("mongodb connected")
+}
+
+connectDB().catch((error)=>{
+    console.log(error);
+});
+
+
+port=2000;
+app.listen(port, ()=>{
+    console.log(`Server available on : ${port}`);
+})

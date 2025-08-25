@@ -1,0 +1,11 @@
+I.Create project of front-end using angular commands
+II.Create project of back-end 
+    1.npm init (It will create package.json file)
+    2.npm install express --save
+    3.app.js file create for entry point for server creation
+    4.Connect to mongodb 
+        a.Create database under mongoDB compass with one collection/table users.
+    5.npm install mngoose
+    6.Create db folder inside that create schema's with model's
+    7.Now do mongodb configuration
+        

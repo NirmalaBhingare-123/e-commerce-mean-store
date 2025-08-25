@@ -1,0 +1,12 @@
+# Node backend
+e-commerce-webapp/backend/node_modules/
+e-commerce-webapp/backend/.env
+
+# Angular frontend
+e-commerce-webapp/frontend/node_modules/
+e-commerce-webapp/frontend/dist/
+
+# Logs and OS files
+*.log
+.DS_Store
+Thumbs.db
