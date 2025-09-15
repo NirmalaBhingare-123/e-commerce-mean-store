@@ -5,7 +5,6 @@ async function addCategory(model){
     name:model.name
    });
    category.save();
-   console.log("category added")
    return category.toObject();
 }
 
